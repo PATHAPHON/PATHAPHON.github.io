@@ -1,19 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Profile</title>
     <style>
-        h1 {
-            color: blue;
-            font-size: 2em;
-            text-align: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: #34495e;
+            border-radius: 25px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            
+        }
+
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #ccd1d6;
+            margin-bottom: 10px;
+        }
+
+    
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            padding: 12px 20px;
+            background-color: #ededed;
+            border-radius: 15px;
+        }
+
+
+        .info-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>hello world</h1>
-    <p>This is a simple HTML document with a styled heading.</p>
+    <div class="profile-card">
+        <img src="PATI.jpg" 
+             alt="Profile Picture" class="profile-image">
+        
+        <h1 class="name">ปฐพล สร้อยเสนา</h1>
+        
+        <div class="divider"></div>
+        
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-text">สาขาวิทยาการคอมพิวเตอร์</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="info-text">รหัสนักศึกษา: 663450041-0</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="info-text">
+                    <a href="mailto:somying.jaidee@email.com" class="email-link">
+                        pathaphon.s@kkumail.com
+                    </a>
+                </span>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="social-links">
+            <a href="https://www.facebook.com/pathaphon.73157/" class="social-link facebook" target="_blank">
+                <span>facebook</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
